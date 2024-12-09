@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    gateway:
+      routes:
+        - id: DoctorServices
+          uri: http://localhost:9090
+          predicates:
+            - Path=/doc/**  # This is the path the gateway will listen to
+
+        - id: PatientServices
+          uri: http://localhost:9091
+          predicates:
+            - Path=/test/**  # This is the path the gateway will listen to
+
+        - id: AppointmentServices
+          uri: http://localhost:9093
+          predicates:
+            - Path=/appointment/**  # Correct path for Appointment Services
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8013

@@ -1,0 +1,51 @@
+package com.cg.test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.cg.controller.DoctorController;
+import com.cg.model.Doctor;
+import com.cg.service.IDoctorService;
+
+@ExtendWith(MockitoExtension.class)
+class DoctorControllerTest {
+	
+	@Mock
+	private IDoctorService doctorService;
+	
+	@InjectMocks
+	private DoctorController doctorController;
+	
+	private Doctor doctor;
+	
+	@BeforeEach
+	void setUp()
+	{
+		doctor = new Doctor(1 , "Doc1" , "M.D.");
+	}
+
+	@Test
+	void testGetAllDoctors()
+	{
+		when(doctorService.findAllDoctors()).thenReturn(Arrays.asList(doctor));
+
+        var products = doctorController.getAllDoctors();
+        assertFalse(products.isEmpty());
+        assertEquals(1, products.size());
+        assertEquals("Product1", products.get(0).getDoctorName());
+	}
+
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="DoctorServices-client (1)" project="DoctorServices-client" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.test.DoctorControllerTest" time="0.27" displayname="DoctorControllerTest" uniqueid="[engine:junit-jupiter]/[class:com.cg.test.DoctorControllerTest]">
+    <testcase name="testCreateProduct" classname="com.cg.test.DoctorControllerTest" time="0.22" displayname="testCreateProduct()" uniqueid="[engine:junit-jupiter]/[class:com.cg.test.DoctorControllerTest]/[method:testCreateProduct()]"/>
+    <testcase name="testGetAllDoctors" classname="com.cg.test.DoctorControllerTest" time="0.045" displayname="testGetAllDoctors()" uniqueid="[engine:junit-jupiter]/[class:com.cg.test.DoctorControllerTest]/[method:testGetAllDoctors()]"/>
+  </testsuite>
+</testrun>

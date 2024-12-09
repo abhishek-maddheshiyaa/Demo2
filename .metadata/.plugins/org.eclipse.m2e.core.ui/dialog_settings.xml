@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Users\abmaddhe\Documents\workspace-spring-tool-suite-4-4.26.0.RELEASE\06-Spring-Rest-Global-Exception-FROM-DB"/>
+			<item value="C:\Users\abmaddhe\Documents\Workspace-STS-Security\Spring3-API-Gateway"/>
+			<item value="C:\Users\abmaddhe\Documents\Workspace-STS-Microservices\1a-Spring-Eureka-Server"/>
+			<item value="C:\Users\abmaddhe\Documents\Hospital Management System\3-spring-mvc-Appointment-hospital"/>
+			<item value="C:\Users\abmaddhe\Documents\Hospital Management System\Paitent-Service"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

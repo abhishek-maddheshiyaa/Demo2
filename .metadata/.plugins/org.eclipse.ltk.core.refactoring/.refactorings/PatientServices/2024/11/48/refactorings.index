@@ -1,0 +1,11 @@
+1732870443013	Delete element
+1732870516045	Rename package 'com.example.demo'
+1732870738605	Rename package 'com.cg.model'
+1732881524886	Rename type 'PaitentServicesApplication'
+1732881543156	Rename type 'Paitent'
+1732881624036	Rename type 'PaitentRepository'
+1732881679147	Rename type 'PaitentService'
+1732881690616	Rename type 'IPaitentService'
+1732881814947	Rename package 'com.cg.paitentdto'
+1732881828819	Rename type 'PaitentDTO'
+1732881875364	Rename type 'PaitentController'

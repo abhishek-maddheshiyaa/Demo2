@@ -1,0 +1,5 @@
+FROM openjdk:8u131-jdk-alpine
+MAINTAINER "Abhishek"
+EXPOSE 9090
+COPY ./target/DoctorServices-client.jar   DoctorServices-client.jar 
+CMD ["java","-jar","DoctorServices-client.jar"]

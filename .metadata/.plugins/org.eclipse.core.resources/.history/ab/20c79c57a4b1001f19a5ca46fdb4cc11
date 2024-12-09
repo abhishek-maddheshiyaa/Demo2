@@ -1,0 +1,107 @@
+package com.cg.dto;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class AppointmentDTO {
+	private int Aid;
+	private LocalDateTime time;
+	private LocalDate date;
+	private String issue;
+	private String status;
+	private String fees;
+	private DoctorDTO doctor;
+	private PatientDTO patient;
+
+	public AppointmentDTO() {
+		super();
+		
+	}
+
+	public AppointmentDTO(int Aid, LocalDateTime time, LocalDate date, String issue, String status,
+			String fees,DoctorDTO doctor,PatientDTO patient) {
+		super();
+		this.Aid=Aid;
+		this.time = time;
+		this.date = date;
+		this.issue = issue;
+		this.status = status;
+		this.fees = fees;
+		this.doctor=doctor;
+		this.patient=patient;
+	}
+
+	public int getAid() {
+		return Aid;
+	}
+
+	public void setAid(int Aid) {
+		this.Aid = Aid;
+	}
+
+
+	public LocalDateTime getTime() {
+		return time;
+	}
+
+	public void setTime(LocalDateTime time) {
+		this.time = time;
+	}
+
+	public LocalDate getDate() {
+		return date;
+	}
+
+	public void setDate(LocalDate date) {
+		this.date = date;
+	}
+
+	public String getIssue() {
+		return issue;
+	}
+
+	public void setIssue(String issue) {
+		this.issue = issue;
+	}
+
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
+	public String getFees() {
+		return fees;
+	}
+
+	public void setFees(String fees) {
+		this.fees = fees;
+	}
+
+	public DoctorDTO getDoctor() {
+		return doctor;
+	}
+
+	public void setDoctor(DoctorDTO doctor) {
+		this.doctor = doctor;
+	}
+
+	public PatientDTO getPatient() {
+		return patient;
+	}
+
+	public void setPatient(PatientDTO patient) {
+		this.patient = patient;
+	}
+
+	@Override
+	public String toString() {
+		return "AppointmentDTO [Aid=" + Aid + ", time=" + time + ", date=" + date
+				+ ", issue=" + issue + ", status=" + status + ", fees=" + fees + ", doctor=" + doctor + ", patient="
+				+ patient + "]";
+	}
+	
+	
+}

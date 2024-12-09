@@ -1,0 +1,42 @@
+package com.cg.dto;
+
+
+public class DoctorDTO {
+	private int id;
+	private String qualification;
+	private String name;
+	public DoctorDTO() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public DoctorDTO(int id, String qualification, String name) {
+		super();
+		this.id = id;
+		this.qualification = qualification;
+		this.name = name;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getQualification() {
+		return qualification;
+	}
+	public void setQualification(String qualification) {
+		this.qualification = qualification;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Override
+	public String toString() {
+		return "DoctorDTO [id=" + id + ", qualification=" + qualification + ", name=" + name + "]";
+	}
+	
+
+}

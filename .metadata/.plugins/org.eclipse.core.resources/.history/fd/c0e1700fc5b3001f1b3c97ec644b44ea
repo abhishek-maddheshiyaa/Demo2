@@ -1,0 +1,17 @@
+package com.cg.error;
+
+@ResponseStatus(value=HttpStatus.BAD_REQUEST)
+
+public class BadRequestExcpetion extends Exception{
+ 
+	public BadRequestExcpetion(String message) {
+
+		super(message);
+
+	}
+ 
+}
+ 
+
+
+ 

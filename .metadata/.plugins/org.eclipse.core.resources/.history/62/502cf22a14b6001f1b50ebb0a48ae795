@@ -1,0 +1,16 @@
+#spring.application.name=PaitentServices
+server.port = 9091
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+#spring.datasource.username=postgres
+#spring.datasource.password=root
+#spring.jpa.hibernate.ddl-auto=update
+
+#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+#eureka.client.serviceUrl.defaultZone = http://localhost:8761/eureka
+#eureka.client.register-with-eureka= true
+
+#spring.zipkin.baseUrl=http://localhost:9411
+#spring.sleuth.enabled=true
+#management.tracing.sampling.probability=1.0
